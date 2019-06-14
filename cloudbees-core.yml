@@ -158,6 +158,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-internal: 0.0.0.0/0
   name: cjoc
 spec:
   type: LoadBalancer
